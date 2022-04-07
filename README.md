@@ -43,7 +43,7 @@ Enable the plugin in your Next.js configuration file:
 ```javascript
 // next.config.js
 const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
+const optimizedImages = require('nnext-optimized-imgs');
 
 module.exports = withPlugins([
   [optimizedImages, {
@@ -65,7 +65,7 @@ The example above uses [next-compose-plugins](https://github.com/cyrilwanner/nex
 
 ```javascript
 // next.config.js
-const withOptimizedImages = require('next-optimized-images');
+const withOptimizedImages = require('next-optimized-imgs');
 
 module.exports = withOptimizedImages({
   /* config for next-optimized-images */
@@ -643,7 +643,7 @@ Type: `object`<br>
 Default:
 ```javascript
 {
-  runtimeGenerator: require.resolve(path.resolve('node_modules', 'next-optimized-images', 'svg-runtime-generator.js')),
+  runtimeGenerator: require.resolve(path.resolve('node_modules', 'next-optimized-imgs', 'svg-runtime-generator.js')),
 }
 ```
 
@@ -712,7 +712,7 @@ So if they are good enough for your use-case, you don't have to specify them to 
 ```javascript
 // next.config.js
 const withPlugins = require('next-compose-plugins');
-const optimizedImages = require('next-optimized-images');
+const optimizedImages = require('next-optimized-imgs');
 
 module.exports = withPlugins([
   [optimizedImages, {
